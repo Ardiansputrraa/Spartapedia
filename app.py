@@ -4,6 +4,10 @@ from pymongo import MongoClient
 import requests
 from bs4 import BeautifulSoup
 
+import os
+from os.path import join, dirname
+from dotenv import load_dotenv
+
 # connect to MangoDB
 client = MongoClient('mongodb+srv://test:sparta@cluster0.6bmi5a1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 db = client.dbsparta
