@@ -46,17 +46,8 @@ import bebrapa library termasuk flask didalam file app.py
 from flask import Flask, render_templatem, request, jsonify 
 from http import client
 from pymongo import MongoClient
-import os
-from os.path import join, dirname
-from dotenv import load_dotenv
 
 buat file index.html didalam package tamplates
 
 file .gitignoer adalah file yang akan dibaca oleh git
 berisi file-file yang akan disertakan dalam ke git untuk mengabaikan beberapa file yang berukuran besar
-
-file start.sh digunakan untuk triger menjalankan aplikasi kita
-
-file .env digunakan untuk memisah string url database 
-karena hanya kita sendiri yang boleh mengakses string url database
-untuk menjaga keamanan data
